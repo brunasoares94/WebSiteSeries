@@ -1,0 +1,253 @@
+body{
+  background-color: rgb(189, 184, 184);
+  /* Alterei so pra ver o background */
+  background-image: url(file:///C:/Users/Pichau/Desktop/Projeto%20Pablo/Projeto%20Final%20Fran/img/BackGround.jpg);
+  background-size: cover;
+  background: position y -150px; ;
+  margin: 15px;
+  display: cover;
+}
+.cordefundo{
+  background-color: rgba(49, 49, 33, 0.384);
+  text-align: center;
+  border-radius: 20px;
+}
+.cordefundo2{
+  background-color: rgba(255, 145, 0, 0.884);
+  border-radius: 20px;
+}
+table{
+  display: inline-block;
+  
+}
+.branco{
+color: aliceblue;
+background-color: rgba(0, 0, 0, 0.719);
+border-radius: 10px;
+text-align: center;
+}
+.branco3{
+  
+  background-color: rgba(0, 0, 0, 0.719);
+  border-radius: 10px;
+  text-align: center;
+  }
+.grande{
+  font-size:2cm;
+}
+.butLog{
+
+}
+/* imagens Index*/
+.galeria-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 0vw;
+  padding: 02vw;
+  border-radius: 20px;
+}
+.gallery-items{
+  width: 200px;
+  height: 300px;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: 1px 1px 1px black;
+  flex-grow: 1;
+  transition: transform .5s linear;
+  border-radius: 8px;
+}
+.gallery-items img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.gallery-items:hover{
+  transform: scale(1.1);
+}
+
+/* imagens ep*/
+
+.gallery-ep{
+  width: 100px;
+  height: 150px;
+  border: 5px solid rgb(255, 255, 255);
+  box-shadow: 1px 1px 1px black;
+  flex-grow: 1;
+  transition: transform .1s linear;
+  border-radius: 10px;
+}
+.gallery-ep img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.gallery-ep:hover{
+  transform: scale(1.1);
+}
+
+/* lista*/
+form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cheia{
+flex:1 1 100%;
+position: relative;
+
+}
+.metade{
+flex: 11 45%;
+position: relative;
+}
+.espaco{
+margin-right: 2.5%;
+}
+.meio{
+width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding: 35px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 100px;
+  font-size: 2.3rem;
+}
+.fontpeq{
+font-size: 1.0;
+}
+/* Cadastro*/
+label{
+display: block;
+width: 100%;  
+
+}
+input:focus,label:focus{
+outline: none;
+}
+.cad{
+width: 650px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 80px;
+padding: 35px;
+font-size: 1.6em;
+background-color: rgba(0, 0, 0, 0.719);
+}
+.branco2{
+color: aliceblue;
+}
+.centro{
+text-align: center;
+}
+
+/* slider */
+
+.slider{
+margin: auto;
+width: 1500px;
+height: 195px;
+overflow: hidden;
+/* Adicionado: */
+display: flex;
+flex-direction: column;
+}
+.slides{
+margin-top:15px;
+width: 100%;
+height: 150px;
+display: flex;
+border-radius: 10px;
+border: solid white;
+background-color: black;
+}
+.slides input{
+display: none;
+}
+.slide{
+width: 25%;
+position: relative;
+}
+.slide img{
+width:250px;
+
+}
+.manual-navigation{
+ /*position: absolute;
+width: 100px;
+margin-top: 150px;
+margin-left: 70vh;
+display: flex;
+justify-content:center;
+align-items: center;
+flex-direction: row;
+resize: both; */
+
+/* Adicionado: */
+flex:1;
+display: flex;
+justify-content:center;
+align-items: center;
+
+}
+.manual-btn{
+border: 2px solid white;
+padding: 5px;
+border-radius: 10px;
+cursor: pointer;
+transition: 0.1s;
+}
+.manual-btn:not(:last-child){
+margin-right: 40px;
+}
+.manual-btn:hover{
+background-color: white;
+}
+#radio1:checked ~ .first{
+margin-left: 0%;
+}
+#radio2:checked ~ .first{
+margin-left: -25%;
+}
+#radio3:checked ~ .first{
+margin-left: -50%;
+}
+#radio4:checked ~ .first{
+margin-left: -75%;
+}
+
+.navigation-auto{
+border: 2 px solid blue;
+padding: 5px;
+border-radius: 10px;
+cursor: pointer;
+transition: 0.5s;
+
+}
+.navigation-auto{
+position: absolute;
+width: 800px;
+margin-top: 360px;
+display: flex;
+justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+margin-right: 40px;
+}
+#radio1:checked~ .navigation-auto .auto-btn1{
+background-color: white;
+}
+#radio2:checked~ .navigation-auto .auto-btn2{
+background-color: white;
+}
+#radio3:checked~ .navigation-auto .auto-btn3{
+background-color: white;
+}
+#radio4:checked~ .navigation-auto .auto-btn4{
+background-color: white;
+}

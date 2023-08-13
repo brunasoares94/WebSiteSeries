@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Anime</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- MENU -->
+     
+    <div class="ui huge inverted black menu cord">
+       
+        <a href="Index.html" class="item">Inicio</a>
+        <a href="Favoritos.html" class="item">Favoritos</a>
+        <a href="Calendario.html" class="item">Calendario</a> 
+        <a href="Lista.html" class=" active item">Lista de Animes</a>
+               <div class="right menu">
+            
+            <div class="item">
+              <div class="ui action left icon input">
+                <input type="text" placeholder="Pesquisar">
+                <div class="ui animated orange button" tabindex="0">
+                    <div class="visible content">Pesquisar</div>
+                    <div class="hidden content">
+                      <i class="right arrow icon"></i>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <a href="login.html" class="item"><div class="ui inverted button">Login</div></a>    
+          </div>
+    
+    </div><br>
+          <div class="branco3 conteiner meio cordefundo">
+        <h1 class="branco2">Digite Seus Dados</h1>
+        <form id="register-form" action="">
+            <div class="cheia">
+              <label class="branco2"for="email" style="margin: 10px;">E-mail</label>
+              <input type="email" name= "email" id="email" placeholder="Digite seu E-mail" style="margin: 10px;"data-min-length="2" data-email-validate>
+          </div>
+            <div class="metade espaco" style="margin: 10px;">
+                <label for="name" class="branco2">Senha </label>
+                <input type="text" name= "name" id="name" placeholder="Digite sua senha" style="margin: 10px;" data-required data-min-length="3" data-max-length="15" data-only-letters>
+                <br><br>
+                <a href="login.html" class="item"><div class="ui massive button">Login</div></a><br><br>
+                  
+            </div>
+            <a href="Cadastro.html"class=" cheia fontpeq">Não possui conta?</a>
+            <p class="error-validation template"></p>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
+<!--  -->
